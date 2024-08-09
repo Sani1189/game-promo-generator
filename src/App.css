@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.1em;
+}
+
+input:focus, select:focus {
+  border-color: #61dafb;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Updated button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.2em; /* Increased font size */
+}
+
+button:hover {
+  background-color: #e55a50;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loading-text {
+  font-size: 1.5em; /* Increased font size for loading text */
+  color: #61dafb;
+  margin-top: 10px;
+}
+
+.codes-container {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 1000px; /* Limit the maximum width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.code-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f4f4f4;
+  color: #282c34;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.code-item span {
+  flex-grow: 1;
+  color: #282c34;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.copy-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1em; /* Adjust font size */
+}
+
+.copy-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.request-details {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f4f4f4;
+  color: #282c34;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.request-details p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #282c34;
+  text-align: center;
+  padding: 2px auto;
+}
+
+/* Responsive text sizing for larger devices */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  p, .loading-text, .code-item span {
+    font-size: 1.3em;
+  }
+
+  .form-group label {
+    font-size: 1.4em;
+  }
+}
